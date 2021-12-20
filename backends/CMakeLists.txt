@@ -1,0 +1,3 @@
+add_library(imgui_backends imgui_impl_glfw.cpp imgui_impl_opengl3.cpp)
+target_link_libraries(imgui_backends PRIVATE imgui)
+target_link_libraries(imgui_backends PUBLIC glfw)
